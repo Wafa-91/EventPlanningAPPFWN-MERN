@@ -19,4 +19,16 @@ router.post("/login",loginRules(),validation, controllers.login)
 router.get("/current", isAuth(), controllers.current)
 
 
+//get all users
+router.get("/",controllers.getUsers)
+
+
+  module.exports = router;
+
+  //delete One user
+  router.delete('/:id',controllers.deleteOneUser)
+
+
+  //update User
+router.put('/:id',controllers.updateUser)
   module.exports = router;

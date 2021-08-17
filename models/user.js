@@ -27,6 +27,12 @@ const UserSchema=new schema({
     isAdmin:{
        type:Boolean,
        default: false,
+    },
+    phone:{
+        type:String,
+        default: "12345678",
+    
+   
     }
 
 

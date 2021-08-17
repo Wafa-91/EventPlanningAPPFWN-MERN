@@ -21,8 +21,11 @@ const cardSchema=new schema({
     category:{
         type:Array,
         required:true
-    }
+    }, 
 
+prix:{
+    type:Number
+}
 
 
 });

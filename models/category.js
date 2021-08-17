@@ -5,10 +5,13 @@ const categorySchema=new schema({
         type:String,
         required:true
     },
-    decription:{
+    description:{
         type:String,
      
     },
+    categoryImage:{
+        type:String,
+    }
    
 });
 

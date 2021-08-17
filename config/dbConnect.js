@@ -9,7 +9,7 @@ const connectDB=async()=>{
         console.log("database is connected")
     } catch (error) {
         console.log("database is not connected")
-        console.log(error)
+        console.log({msg:error})
     }
 }
 module.exports=connectDB;
