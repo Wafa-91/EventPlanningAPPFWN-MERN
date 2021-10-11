@@ -19,6 +19,7 @@ switch (type) {
         return  {...state, loaduser:false, user:payload.user, isAuth:true};
     case LOAD_USER:
         return {...state, loaduser:true};
+        
         case GET_USER_SUCCESS:
             return {...state,users:payload,loaduser:false}
         case GET_USER_FAIL:

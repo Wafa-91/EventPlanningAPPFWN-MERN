@@ -2,7 +2,7 @@ const User=require('../models/user')
 const bcrypt=require("bcrypt")
 const jwt=require("jsonwebtoken")
 exports.register=async(req,res)=>{
-    const {name,lastName,email,password, isAdmin}=req.body;
+    const {name,lastName,email,password,isAdmin}=req.body;
     try {
         const newUser=new User({name,lastName,email,password,isAdmin})
 //check if the email exist

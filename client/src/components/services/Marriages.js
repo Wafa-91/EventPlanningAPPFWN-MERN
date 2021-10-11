@@ -5,7 +5,7 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import { getCards } from "../../js/actions/card";
-import "./card.css";
+// import "./card.css";
 import { CardActions } from "@material-ui/core";
 import { useSelector, useDispatch } from "react-redux";
 import Category from "./Category";
@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
   },
   tabs: {
-    borderRight: `1px solid ${theme.palette.divider}`,
+    borderRight: `5px solid ${theme.palette.divider}`,
     width: "18%",
   },
   disabled: {
@@ -95,6 +95,7 @@ export default function Marriages() {
           aria-label="Vertical tabs example"
           className={classes.tabs}
           style={{ marginTop: "80px", fontSize: "6" }}
+          inkBarStyle={{background: 'blue'}}
         >
           <Tab
             label="Salles des fetes"
@@ -102,7 +103,7 @@ export default function Marriages() {
             style={{
               fontSize: "12px",
               letterSpacing: "1px",
-              color: "rgb(15, 15, 15)",
+              color: "red",
               fontWeight: "400",
             }}
           />

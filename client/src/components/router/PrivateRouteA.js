@@ -8,10 +8,10 @@ import {useSelector} from 'react-redux'
     const isAuth = localStorage.getItem("token");
     const user= useSelector(state => state.userReducer.user)
     if (isAuth){
-    if(user){ if(user.isAdmin){
+   if(user.isAdmin){
           return <Route component={Component}{...rest}/>
 
-      }}
+      }
      
     }return <Redirect to="/" />;
 

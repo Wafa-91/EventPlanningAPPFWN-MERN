@@ -12,7 +12,6 @@ import './App.css';
 import  Navbar  from "./components/Navbar";
 import Home from "./components/Home"
 import Services from "./components/services/Services"
-// import Marriageee from "./components/services/Marriageee";
  import Marriages from "./components/services/Marriages";
 import Contact from "./components/Contact"
 import Dashbord from "./components/admin/Dashbord";

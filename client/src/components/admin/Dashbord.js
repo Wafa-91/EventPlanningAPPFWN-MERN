@@ -4,14 +4,14 @@ import AdminTabs from './AdminTabs'
 import {useSelector,useDispatch} from "react-redux"
 import {getUsers} from "../../js/actions/user"
 import {getReservations} from "../../js/actions/reservation"
-
+import { current } from '../../js/actions/user';
 
 function Dashbord() {
   const dispatch = useDispatch()
   const loaduser= useSelector(state => state.userReducer.loaduser);
   const user = useSelector(state => state.userReducer.user)
   useEffect(()=>{
-    dispatch(getUsers());dispatch(getReservations())},[]
+    dispatch(getUsers());dispatch(getReservations());dispatch(current())},[]
 )
   return (
     <div style={{marginTop:100}}>
